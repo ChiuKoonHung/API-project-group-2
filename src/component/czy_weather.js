@@ -3,7 +3,7 @@ import "./czy_weather.css";
 import moment from "moment";
 import { Button } from "semantic-ui-react";
 
-const refresh = () => {
+const refreshbutton = () => {
     window.location.reload();
 };
 
@@ -11,7 +11,7 @@ const WeatherCard = ({ weatherData }) => (
     <div className="main">
         <div className="top">
             <p className="header">{weatherData.name}</p>
-            <Button className="button" inverted color="blue" circular icon="refresh" onClick={refresh}>
+            <Button className="button" inverted color="blue" onClick={refreshbutton}>
                 Refresh
             </Button>
         </div>
