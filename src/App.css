@@ -1,8 +1,10 @@
 .container {
     border: 2px solid black;
-    margin: auto 20px;
+    margin: auto;
     display: flex;
     flex-flow: row wrap;
+    width: fit-content;
+    height: fit-content;
     justify-content: center;
 }
 .chart {
