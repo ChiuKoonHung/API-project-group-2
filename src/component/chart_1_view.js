@@ -14,12 +14,13 @@ export default function Weather() {
                 setLat(position.coords.latitude);
                 setLong(position.coords.longitude);
             });
-
+            //fetch() starts a request and returns a promise.
             await fetch(
                 `${process.env.REACT_APP_API_URL}/weather/?lat=${lat}&lon=${long}&appid=${process.env.REACT_APP_API_KEY}`
             )
-                .then((res) => res.json())
+                .then((res) => res.json()) //here comsume the value
                 .then((result) => {
+                    //here set the result
                     setData(result);
                     console.log(result);
                 });
