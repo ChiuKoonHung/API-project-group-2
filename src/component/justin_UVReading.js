@@ -22,15 +22,30 @@ function UltraVioletReadings(props) {
     }
 }
 
-    return (
-        <div className='readings-container'>
-            <input className='input-box' type='text' placeholder='Enter date' onChange={handleInput} onKeyPress={fetchIndex} />
-            <br/>
-            <div><p>Ultra-violet Index: {uvIndex}</p></div>          
-            <div><p>Date and Time: {uvTime}</p></div>
-            <div><p>Status: {uvStatus}</p></div>
-        </div>
-    )
+return (
+    <>
+    <div className='readings-container'>
+        <input className='input-box' type='text' placeholder='Enter date' onChange={handleInput} onKeyPress={fetchIndex} />
+        <br/>
+    </div>
+    <div>
+        <p>Date and Time: {uvTime}</p>
+        <p>Status: {uvStatus}</p>
+        { ! uvStatus ? null :
+        <>
+        { uvIndex >= 6 ? 
+        <>
+         <p>
+         Ultra-violet Index: {uvIndex}. <br/>Remember to apply sunscreen and wear sunglasses when going out!
+         </p>
+        </> :
+        <p>
+        Ultra-violet Index: {uvIndex} <br/>Index is currently low/moderate. 
+        </p>}
+        </>}
+    </div>
+    </>
+)
 }
 
 export default UltraVioletReadings;
