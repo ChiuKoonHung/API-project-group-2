@@ -1,6 +1,5 @@
-import logo from "./logo.svg";
 import "./App.css";
-import Weather from "./component/chart_1_view";
+import Weather from "./component/czy_Chart/chart_1_view";
 
 function App() {
     return (

@@ -10,7 +10,7 @@ export default function Weather() {
 
     useEffect(() => {
         const fetchData = async () => {
-            navigator.geolocation.getCurrentPosition(function (position) {
+            navigator.geolocation.getCurrentPosition((position) => {
                 setLat(position.coords.latitude);
                 setLong(position.coords.longitude);
             });
