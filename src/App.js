@@ -1,6 +1,6 @@
 import "./App.css";
 import Weather from "./component/czy_Chart/chart_1_view";
-
+import PersonList from "./component/czy_Chart/czy_test";
 function App() {
     return (
         <div className="App">
@@ -9,7 +9,9 @@ function App() {
                 <div className="chart">
                     <Weather />
                 </div>
-                <div className="chart">2</div>
+                <div className="chart">
+                    <PersonList />
+                </div>
                 <div className="chart">3</div>
                 <div className="chart">4</div>
                 <div className="chart">5</div>
