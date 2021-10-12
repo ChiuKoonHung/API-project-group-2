@@ -11,20 +11,16 @@ export default function Weather() {
     //you tell React that your component needs to do something after render
     useEffect(() => {
         const fetchData = async () => {
-            console.log("hahahahah");
-            let lat, long;
-            let location = await navigator.geolocation.getCurrentPosition((position) => {
-                lat = position.coords.latitude;
-                long = position.coords.longitude;
-                console.log(`inside:${long},${lat}`);
-                return { lat, long };
-                // setLat(position.coords.latitude);
-                // setLong(position.coords.longitude);
+            const geoLocation = await new Promise((resolve, reject) => {
+                navigator.geolocation.getCurrentPosition((position) => {
+                    const lat = position.coords.latitude;
+                    const long = position.coords.longitude;
+                    resolve({ lat, long });
+                });
             });
-            console.log("location", `${location}`);
-            //fetch() starts a request and returns a promise.
+            console.log(geoLocation);
             await fetch(
-                `${process.env.REACT_APP_API_URL}/weather/?lat=${lat}&lon=${long}&appid=${process.env.REACT_APP_API_KEY}`
+                `${process.env.REACT_APP_API_URL}/weather/?lat=${geoLocation.lat}&lon=${geoLocation.long}&appid=${process.env.REACT_APP_API_KEY}`
             )
                 .then((res) => res.json()) //here comsume the value
                 .then((result) => {
