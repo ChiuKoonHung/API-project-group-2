@@ -8,7 +8,7 @@ function App() {
             <h1>Group_2 dash board</h1>
             <div className="container">
                 <div className="chart">
-                    <Weather />
+                    {/* <Weather /> */}
                 </div>
                 <div className="chart">2</div>
                 <div className="chart">3</div>
