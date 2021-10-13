@@ -1,6 +1,9 @@
 import "./App.css";
+
 import Weather from "./component/czy_Chart/chart_1_view";
 import PM from "./component/czy_Chart/czy_PM25";
+import UltraVioletReadings from "./component/justin_UVReading";
+
 function App() {
     return (
         <div className="App">
@@ -15,7 +18,7 @@ function App() {
                 <div className="chart">3</div>
                 <div className="chart">4</div>
                 <div className="chart">5</div>
-                <div className="chart">6</div>
+                <div className="chart"><UltraVioletReadings /></div>
             </div>
         </div>
     );
