@@ -50,11 +50,9 @@ const ShowForecast = ({}) => {
     
     },[])
 
-    //console.log(forecast2h);
-
     return (
         <>
-        {/* <select id="location">
+        <select id="location">
         <option disabled selected>Select Location</option>    
         <option value="0">Ang Mo Kio</option>
         <option value="1">Bedok</option>
@@ -64,9 +62,10 @@ const ShowForecast = ({}) => {
         <option value="9">Changi</option>
         <option value="14">Hougang</option>
         <option value="46">Yishun</option>
-      </select> */}
+      </select>
+
         <p>The time now is: {timeNow}</p>
-        <p>It is expected to be a {forecast2h} for the next 2 hours</p>
+        <p>Weather forecast for next 2 hours: {forecast2h}</p>
         <p>at {location2h}</p>
         {/* <p>at {forecast2h}</p> */}
         {/* <p>{forecast24h}</p>
