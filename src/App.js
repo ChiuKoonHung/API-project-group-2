@@ -1,9 +1,11 @@
 import "./App.css";
+
 import Weather from "./component/czy_Chart/chart_1_view";
 import PM from "./component/czy_Chart/czy_PM25";
 
 import Forecast from "./component/chart_4_view";
 
+import UltraVioletReadings from "./component/justin_UVReading";
 
 function App() {
     return (
@@ -21,7 +23,7 @@ function App() {
                     <Forecast />
                 </div>
                 <div className="chart">5</div>
-                <div className="chart">6</div>
+                <div className="chart"><UltraVioletReadings /></div>
             </div>
         </div>
     );
