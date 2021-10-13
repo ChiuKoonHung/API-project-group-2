@@ -100,10 +100,10 @@ const ShowForecast = ({}) => {
       </select>
 
         <p>Time now: {timeNow}</p>
-        <p>Expected Weather (next 2hrs): {forecast2h}</p>
+        <p>Weather Forecast (next 2hrs): {forecast2h}</p>
         <p>Location: {location2h}</p>
 
-        <b>Expected Weather in Singapore</b>
+        <b>Weather Forecast (5 day)</b>
         <p>Today, {dateToday}: {forecast24h}</p>
         <p>North: {north}</p>
         <p>South: {south}</p>
