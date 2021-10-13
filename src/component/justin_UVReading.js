@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import API from "../API";
-import '../App.css';
+import justin_css from './justin_UVReading.css';
 import moment from 'moment';
 
 function UltraVioletReadings(props) {
@@ -37,7 +37,7 @@ function UltraVioletReadings(props) {
             <hr />
         <div className='dateTime'>
             {/* // set condition to display date & time  */}
-            { ! uvTime ? null :
+            { ! uvTime ? 'Date & Time:' :
             <>
              <p>
              {moment(date1).format(format1, true)}
@@ -47,7 +47,7 @@ function UltraVioletReadings(props) {
         <hr />
         <div className='status'>
             {/* // set condition for UV status.  */}
-           { ! uvStatus ? null :
+           { ! uvStatus ? 'Status:' :
             <>
             { uvStatus === "healthy" ? 
             <>
@@ -61,7 +61,7 @@ function UltraVioletReadings(props) {
         <hr />
         <div className='index'>
             {/* // set condition for UV index.  */}
-            { ! uvTime ? null :
+            { ! uvTime ? 'Ultra-violet Index:' :
             <>
             { uvIndex >= 6 ? 
             <>

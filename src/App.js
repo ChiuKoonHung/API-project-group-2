@@ -1,6 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import Weather from "./component/chart_1_view";
+import UltraVioletReadings from "./component/justin_UVReading";
 
 function App() {
     return (
@@ -14,7 +15,7 @@ function App() {
                 <div className="chart">3</div>
                 <div className="chart">4</div>
                 <div className="chart">5</div>
-                <div className="chart">6</div>
+                <div className="chart"><UltraVioletReadings /></div>
             </div>
         </div>
     );
