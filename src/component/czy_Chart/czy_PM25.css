@@ -1,0 +1,20 @@
+.PM25 {
+    border-radius: 20px;
+    width: fit-content;
+    background-color: #01579b;
+}
+.top-container {
+    height: 60px;
+    background-color: #424242;
+    color: whitesmoke;
+    padding: 0 10px 30px 10px;
+    border-radius: 20px 20px 0 0;
+    font-family: "Recursive", sans-serif;
+    display: flex;
+    justify-content: space-between;
+}
+.bottom-container {
+    padding: 10px 55px 20px 20px;
+    color: white;
+    justify-content: center;
+}
