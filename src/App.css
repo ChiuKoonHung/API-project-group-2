@@ -1,6 +1,6 @@
 .container {
-    border: 2px solid black;
-    margin: auto;
+    border: 2px solid white;
+    margin: 10px 20px 10px 20px;
     display: flex;
     flex-flow: row wrap;
     width: fit-content;
@@ -8,7 +8,7 @@
     justify-content: center;
 }
 .chart {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: fit-content;
     height: fit-content;
     margin: 20px 20px;

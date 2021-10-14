@@ -1,0 +1,27 @@
+.main-container {
+    background: white;
+    width: max-content;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.forecast-container {
+	width: fit-content;
+	margin: auto;
+	
+	display: flex;
+    justify-content: center;
+}
+
+.list {
+	width: fit-content;
+	margin: auto;	
+    justify-content: center;
+}
+
+.item {
+	padding: 15px;
+	font-family: sans-serif;
+	color: black;
+    font-size: 12px;
+}
