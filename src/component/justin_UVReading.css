@@ -1,30 +1,26 @@
-.h2 {
-    width: max-content
-}
-  
 .readings-container {
     width: max-content;
     border: 1px solid;
     border-radius: 20px;
 }
-  
+
 .input-box {
     margin: 10px 60px 18px 60px;
 }
-  
-.dateTime { 
+
+.dateTime {
     /* background-color: yellow; */
     display: flex;
     justify-content: center;
 }
-  
+
 .status {
     /* border: 1px solid black; */
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
-  
+
 .index {
     display: flex;
     justify-content: center;
