@@ -1,0 +1,51 @@
+hr {
+    margin: 0px;
+  }
+  
+  h3 {
+    text-align: center;
+  }
+  
+  .readings-container {
+    width: 30%;
+    border: 1px solid;
+    border-radius: 20px;
+  }
+  
+  .dateTime { 
+    display: block;
+    justify-content: center;
+  }
+  
+  .status {
+    display: block;
+    justify-content: center;
+  }
+  
+  .status-remarks {
+    margin: 5px auto;
+    width: 90%;
+    text-align: center;
+  }
+  
+  .status-check {
+    margin: 5px auto;
+    text-align: center;
+  }
+  
+  .index {
+    background-color: ;
+    display: block;
+    justify-content: center;
+  }
+  
+  .index-remarks {
+    margin: 5px auto;
+    width: 90%;
+    text-align: center;
+  }
+  
+  .index-display {
+    margin: 5px auto;
+    text-align: center;
+  }
