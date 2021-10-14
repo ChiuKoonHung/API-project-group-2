@@ -2,7 +2,7 @@ import "./App.css";
 
 import Weather from "./component/czy_Chart/chart_1_view";
 import PM from "./component/czy_Chart/czy_PM25";
-
+import PSI from "./component/clam/clam-psi-j.js"
 import Forecast from "./component/chart_4_view";
 
 import UltraVioletReadings from "./component/justin_UVReading";
@@ -22,9 +22,11 @@ function App() {
                 <div className="chart">
                     <Forecast />
                 </div>
-                <div className="chart">5</div>
                 <div className="chart">
-                    <UltraVioletReadings />
+                    <Pollutant Standards Index />
+                </div>
+               
+                    
                 </div>
             </div>
         </div>
