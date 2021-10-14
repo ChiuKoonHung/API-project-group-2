@@ -74,20 +74,20 @@ const ShowForecast = ({}) => {
     },[])
 
     return (
-        <div class = "main-container">
+    <div class = "main-container">
         <p>Today's date is {dateToday}. The time now is {timeNow}</p>
         <h3>24 hour forecast (islandwide): {forecast24h}</h3>
         <h3>24 hour forecast (by region)</h3>
 
         <div class="forecast-container">
-        <div class="item">North <br/> {north}</div>
-        <div class="item">South <br/> {south}</div>
-        <div class="item">East <br/> {east}</div>
+        <div class="item">North<br/>{north}</div>
+        <div class="item">South<br/>{south}</div>
+        <div class="item">East<br/>{east}</div>
         </div> 
 
         <div class="forecast-container">
-        <div class="item">West <br/> {west}</div>
-        <div class="item">Central <br/> {central}</div>
+        <div class="item">West<br/>{west}</div>
+        <div class="item">Central<br/>{central}</div>
         </div> 
 
         <h3>2 hour forecast (by location): {forecast2h}</h3>
@@ -107,16 +107,17 @@ const ShowForecast = ({}) => {
                 <option value="14">Hougang</option>
                 <option value="46">Yishun</option>
             </select>
-        </div>
-            
+        </div>        
         <h3>4 day forecast (islandwide)</h3>  
+
         <div class = "list">
         <p>{date1st}: {forecast1st}</p>
         <p>{date2nd}: {forecast2nd}</p>
         <p>{date3rd}: {forecast3rd}</p>
         <p>{date4th}: {forecast4th}</p>
         </div>
-        </div> 
+
+    </div> 
     )
 }
 
