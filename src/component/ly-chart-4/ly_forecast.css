@@ -1,8 +1,14 @@
 .main-container {
-    background: white;
+    background-color:rgba(0, 0, 0, 0.3);
+	color: white;
     width: max-content;
+	padding: 15px;
     border-radius: 20px;
     font-size: 12px;
+}
+
+.section-divider { 
+	border-bottom: 1px solid white;
 }
 
 .forecast-container {
@@ -22,6 +28,5 @@
 .item {
 	padding: 15px;
 	font-family: sans-serif;
-	color: black;
     font-size: 12px;
 }
