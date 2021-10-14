@@ -1,16 +1,16 @@
 import "./App.css";
-
 import Weather from "./component/czy_Chart/chart_1_view";
-import PM from "./component/czy_Chart/czy_PM25";
+import PM from "./component/czy_Chart/chart_2_view";
 
 import Forecast from "./component/ly-chart-4/chart_4_view";
 
 import UltraVioletReadings from "./component/justin_UVReading";
 
+
 function App() {
     return (
         <div className="App">
-            <h1>Group_2 dash board</h1>
+            <h1 style={{ color: "white" }}>Weather information in Singapore</h1>
             <div className="container">
                 <div className="chart">
                     <Weather />
@@ -18,7 +18,7 @@ function App() {
                 <div className="chart">
                     <PM />
                 </div>
-                <div className="chart">3</div>
+
                 <div className="chart">
                     <Forecast />
                 </div>

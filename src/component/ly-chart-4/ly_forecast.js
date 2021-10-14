@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./ly_forecast.css";
-import API from "./API_forecast";
+import API from "../../API";
 document.title = "Forecast App";
 
 const ShowForecast = ({}) => {
@@ -74,21 +74,27 @@ const ShowForecast = ({}) => {
     },[])
 
     return (
+    <>    
     <div class = "main-container">
-        <p>Today's date is {dateToday}. The time now is {timeNow}</p>
-        <h3>24 hour forecast (islandwide): {forecast24h}</h3>
+        <div class>
+            <p>Today's date is {dateToday}. The time now is {timeNow}</p>
+            <h3>24 hour forecast (islandwide): {forecast24h}</h3>
+        </div>
+        <div class = "section-divider"></div> 
         <h3>24 hour forecast (by region)</h3>
 
         <div class="forecast-container">
-        <div class="item">North<br/>{north}</div>
-        <div class="item">South<br/>{south}</div>
-        <div class="item">East<br/>{east}</div>
+        <div class="item"><b>North</b><br/>{north}</div>
+        <div class="item"><b>South</b><br/>{south}</div>
+        <div class="item"><b>East</b><br/>{east}</div>
         </div> 
 
         <div class="forecast-container">
-        <div class="item">West<br/>{west}</div>
-        <div class="item">Central<br/>{central}</div>
+        <div class="item"><b>West</b><br/>{west}</div>
+        <div class="item"><b>Central</b><br/>{central}</div>
         </div> 
+
+        <div class = "section-divider"></div>
 
         <h3>2 hour forecast (by location): {forecast2h}</h3>
 
@@ -107,7 +113,10 @@ const ShowForecast = ({}) => {
                 <option value="14">Hougang</option>
                 <option value="46">Yishun</option>
             </select>
-        </div>        
+        </div>
+        <br/>
+        <div class = "section-divider"></div>
+                
         <h3>4 day forecast (islandwide)</h3>  
 
         <div class = "list">
@@ -118,6 +127,7 @@ const ShowForecast = ({}) => {
         </div>
 
     </div> 
+    </>
     )
 }
 
