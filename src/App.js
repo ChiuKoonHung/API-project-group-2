@@ -3,7 +3,7 @@ import "./App.css";
 import Weather from "./component/czy_Chart/chart_1_view";
 import PM from "./component/czy_Chart/czy_PM25";
 
-import Forecast from "./component/chart_4_view";
+import Forecast from "./component/ly-chart-4/chart_4_view";
 
 import UltraVioletReadings from "./component/justin_UVReading";
 
