@@ -36,7 +36,6 @@ const ShowForecast = ({}) => {
         
         const getWeatherForecast = async (e) =>{
 
-    
         try {
 
             const forecast2h = await API.get(`2-hour-weather-forecast?date_time=${dateTime}`);
