@@ -5,8 +5,6 @@ import WeatherCard from "./czy_weather";
 import { Dimmer, Loader } from "semantic-ui-react";
 
 export default function Weather() {
-    // const [lat, setLat] = useState([]);
-    // const [long, setLong] = useState([]);
     const [data, setData] = useState([]);
 
     //you tell React that your component needs to do something after render
@@ -19,13 +17,13 @@ export default function Weather() {
                     resolve({ lat, long });
                 });
             });
-            console.log(geoLocation);
+            // console.log(geoLocation);
             await axios
                 .get(
                     `${process.env.REACT_APP_API_URL}/weather/?lat=${geoLocation.lat}&lon=${geoLocation.long}&appid=${process.env.REACT_APP_API_KEY}`
                 )
                 .then((res) => {
-                    console.log(res.data);
+                    // console.log(res.data);
                     setData(res.data);
                 });
             // await fetch(

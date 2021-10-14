@@ -1,18 +1,19 @@
-import axios from "axios";
+// import axios from "axios";
 import React, { useEffect, useState } from "react";
+import API from "../../API";
 import { Dimmer, Loader } from "semantic-ui-react";
 import "./czy_PM25.css";
 
-const baseURL = "https://api.data.gov.sg/v1/environment/pm25";
+// const baseURL = "https://api.data.gov.sg/v1/environment/pm25";
 
 export default function PM() {
     const [pm, setPm] = useState(null);
 
     useEffect(() => {
         async function getReading() {
-            await axios.get(baseURL).then((response) => {
+            await API.get(`/pm25`).then((response) => {
                 setPm(response.data.items[0]);
-                console.log("pm return ", pm);
+                // console.log("pm return ", pm);
             });
         }
         getReading();
