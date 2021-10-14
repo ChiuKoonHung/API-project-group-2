@@ -15,7 +15,7 @@ function App() {
                 <div className="chart">
                     <PM />
                 </div>
-                <div className="chart">3</div>
+
                 <div className="chart">
                     <Forecast />
                 </div>
