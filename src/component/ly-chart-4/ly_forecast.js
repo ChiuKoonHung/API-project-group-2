@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./ly_forecast.css";
-import API from "./API_forecast";
+import API from "../../API";
 document.title = "Forecast App";
 
 const ShowForecast = ({}) => {
