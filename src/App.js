@@ -1,6 +1,6 @@
 import "./App.css";
 import Weather from "./component/czy_Chart/chart_1_view";
-import PM from "./component/czy_Chart/czy_PM25";
+import PM from "./component/czy_Chart/chart_2_view";
 function App() {
     return (
         <div className="App">
