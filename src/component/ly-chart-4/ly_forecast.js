@@ -30,6 +30,7 @@ const ShowForecast = ({}) => {
 
     const [forecast4th, setForecast4th] = useState([]);
     const [date4th, setDate4th] = useState([]);
+    const [areaIndex, setAreaIndex] = useState("0"); 
 
     useEffect(()=>{
         
@@ -38,12 +39,12 @@ const ShowForecast = ({}) => {
     
         try {
 
-            const forecast2h = await API.get(`/2-hour-weather-forecast?date_time=${dateTime}`);
-            const forecast24h = await API.get(`/24-hour-weather-forecast?date=${dateToday}`); 
-            const forecast4day = await API.get(`/4-day-weather-forecast?date=${dateToday}`);  
-            
-            setLocation2h(forecast2h.data.items[0]["forecasts"][0]["area"]);
-            setForecast2h(forecast2h.data.items[0]["forecasts"][0]["forecast"]);
+            const forecast2h = await API.get(`2-hour-weather-forecast?date_time=${dateTime}`);
+            const forecast24h = await API.get(`24-hour-weather-forecast?date=${dateToday}`); 
+            const forecast4day = await API.get(`4-day-weather-forecast?date=${dateToday}`);  
+
+            setLocation2h(forecast2h.data.items[0]["forecasts"][areaIndex]["area"]);
+            setForecast2h(forecast2h.data.items[0]["forecasts"][areaIndex]["forecast"]);
 
             setForecast24h(forecast24h.data.items[0]["general"]["forecast"]);
             setNorth(forecast24h.data.items[0]["periods"][0]["regions"]["north"]);
@@ -71,7 +72,8 @@ const ShowForecast = ({}) => {
 
     getWeatherForecast();
     
-    },[])
+    },[forecast2h, areaIndex])
+    //putting areaIndex in [] allows react to check for updates to areaIndex and update data accordingly (location and forecast)
 
     return (
     <>    
@@ -102,7 +104,10 @@ const ShowForecast = ({}) => {
             <div class="item">Location: {location2h}</div>    
         </div>
         <div class = "list">
-            <select id = "location">
+            <select onChange = {(e) =>{
+                let areaIndex = e.target.value;
+                setAreaIndex(areaIndex);  
+            }}>
                 <option disabled selected>Select Location</option>    
                 <option value="0">Ang Mo Kio</option>
                 <option value="1">Bedok</option>
@@ -113,6 +118,8 @@ const ShowForecast = ({}) => {
                 <option value="14">Hougang</option>
                 <option value="46">Yishun</option>
             </select>
+            {/* uncomment below to check index:*/}
+            {/* {areaIndex} */}
         </div>
         <br/>
         <div class = "section-divider"></div>
