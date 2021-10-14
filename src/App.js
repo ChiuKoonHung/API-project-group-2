@@ -4,7 +4,7 @@ import PM from "./component/czy_Chart/chart_2_view";
 
 import Forecast from "./component/ly-chart-4/chart_4_view";
 
-import UltraVioletReadings from "./component/justin_UVReading";
+import DisplayForecast from "./component/justin_chart/chart_6_view";
 
 function App() {
     return (
@@ -23,7 +23,7 @@ function App() {
                 </div>
                 <div className="chart">5</div>
                 <div className="chart">
-                    <UltraVioletReadings />
+                    <DisplayForecast />
                 </div>
             </div>
         </div>
