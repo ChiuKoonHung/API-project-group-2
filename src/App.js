@@ -6,7 +6,6 @@ import Forecast from "./component/ly-chart-4/chart_4_view";
 
 import UltraVioletReadings from "./component/justin_UVReading";
 
-
 function App() {
     return (
         <div className="App">
