@@ -1,5 +1,4 @@
-//import React, { useEffect, useState } from "react";
-import ShowForecast from "./ly-chart-4/ly_forecast";
+import ShowForecast from "./ly_forecast";
 
 export default function Forecast() {
 
