@@ -1,29 +1,33 @@
 
 .PSI {
   border-radius: 20px;
-  width: fit-content;
-  height: fit-content;
+  width: 200px;
+  height: 320px;
   background-image: url("Moving_Cloud.gif");
 }
-.top-container {
+.Main-container {
   height: 60px;
-  background-color: #424242;
   color: whitesmoke;
   padding: 0 10px 30px 10px;
-  border-radius: 20px 20px 0 0;
+  border-radius: 10px 10px 0 0;
   font-family: "Recursive", sans-serif;
   display: flex;
   justify-content: space-between;
 }
-.bottom-container {
+.Sub-container-2 {
   padding: 10px 55px 20px 20px;
-  color: white;
-  text-align: center;
+  color: grey;
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: space-around;
 }
 
 
-.middle-container {
+.Sub-container-1 {
   padding: 10px 55px 20px 20px;
-  color: white;
+  color: black;
   text-align: center;
+  display: flex;
+  flex-flow: wrap column;
+  justify-content: space-around;
 }
