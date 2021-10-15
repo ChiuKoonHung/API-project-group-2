@@ -1,0 +1,33 @@
+
+.PSI {
+  border-radius: 20px;
+  width: 200px;
+  height: 320px;
+  background-image: url("Moving_Cloud.gif");
+}
+.Main-container {
+  height: 60px;
+  color: whitesmoke;
+  padding: 0 10px 30px 10px;
+  border-radius: 10px 10px 0 0;
+  font-family: "Recursive", sans-serif;
+  display: flex;
+  justify-content: space-between;
+}
+.Sub-container-2 {
+  padding: 10px 55px 20px 20px;
+  color: grey;
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: space-around;
+}
+
+
+.Sub-container-1 {
+  padding: 10px 55px 20px 20px;
+  color: black;
+  text-align: center;
+  display: flex;
+  flex-flow: wrap column;
+  justify-content: space-around;
+}
