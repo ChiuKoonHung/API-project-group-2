@@ -48,18 +48,7 @@ import "./clam-psi.css";
                             <p>South: {psi.readings.psi_twenty_four_hourly.south}</p>
                         </ul>
                     </div>
-                
-                    <div class="Sub-container-2">
-                        <ul>
-                            <p>East: {psi.readings.psi_twenty_four_hourly.east}</p>
-                            <p>West: {psi.readings.psi_twenty_four_hourly.west}</p>
-                            <p>Central: {psi.readings.psi_twenty_four_hourly.central}</p>
-                            <p>North: {psi.readings.psi_twenty_four_hourly.north}</p>
-                            <p>South: {psi.readings.psi_twenty_four_hourly.south}</p>
-                        </ul>
-                    </div>
-                
-                
+                            
                 </div>
             ) : (
                 <div>
