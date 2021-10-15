@@ -1,11 +1,9 @@
 {
-
     "homepage": "http://ChiuKoonHung.github.io/API-project-group-2",
     "name": "api-project",
     "version": "0.1.0",
     "private": true,
     "dependencies": {
-        "gh-pages": "^2.0.1",
         "@testing-library/jest-dom": "^5.14.1",
         "@testing-library/react": "^11.2.7",
         "@testing-library/user-event": "^12.8.3",
@@ -45,6 +43,6 @@
         ]
     },
     "devDependencies": {
-        "gh-pages": "^3.2.3"
+        "gh-pages": "^2.2.0"
     }
 }
