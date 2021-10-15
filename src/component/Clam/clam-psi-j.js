@@ -3,25 +3,20 @@ import React, { useEffect, useState } from "react";
 import { Dimmer, Loader } from "semantic-ui-react";
 import "./clam-psi.css";
 
+const baseURL = "https:api.data.gov.sg/v1/environment/psi";
 
-    const baseURL = "https:api.data.gov.sg/v1/environment/psi";
-
- function PSI() {
-    
-        
+function PSI() {
     const [psi, setPsi] = useState(null);
     const [east, setEast] = useState(null);
     const [west, setWest] = useState(null);
     const [central, setCentral] = useState(null);
     const [north, setNorth] = useState(null);
 
-   
     useEffect(() => {
         async function getReading() {
             await axios.get(baseURL).then((response) => {
                 setPsi(response.data.items[0]);
-               
-                });
+            });
         }
         getReading();
     }, []);
@@ -37,7 +32,6 @@ import "./clam-psi.css";
                             <p>PSI Readings </p>
                         </div>
                     </div>
-                 
 
                     <div class="Sub-container-1">
                         <ul>
@@ -48,7 +42,7 @@ import "./clam-psi.css";
                             <p>South: {psi.readings.psi_twenty_four_hourly.south}</p>
                         </ul>
                     </div>
-                            
+
                 </div>
             ) : (
                 <div>
@@ -61,5 +55,4 @@ import "./clam-psi.css";
     );
 }
 
-export default PSI
-   
+export default PSI;
