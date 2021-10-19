@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/API-project-group-2/static/css/main.d86c32fe.chunk.css",
+    "main.js": "/API-project-group-2/static/js/main.72305978.chunk.js",
+    "main.js.map": "/API-project-group-2/static/js/main.72305978.chunk.js.map",
+    "runtime-main.js": "/API-project-group-2/static/js/runtime-main.1ebe48ba.js",
+    "runtime-main.js.map": "/API-project-group-2/static/js/runtime-main.1ebe48ba.js.map",
+    "static/js/2.28e266c4.chunk.js": "/API-project-group-2/static/js/2.28e266c4.chunk.js",
+    "static/js/2.28e266c4.chunk.js.map": "/API-project-group-2/static/js/2.28e266c4.chunk.js.map",
+    "static/js/3.9610650c.chunk.js": "/API-project-group-2/static/js/3.9610650c.chunk.js",
+    "static/js/3.9610650c.chunk.js.map": "/API-project-group-2/static/js/3.9610650c.chunk.js.map",
+    "index.html": "/API-project-group-2/index.html",
+    "static/css/main.d86c32fe.chunk.css.map": "/API-project-group-2/static/css/main.d86c32fe.chunk.css.map",
+    "static/js/2.28e266c4.chunk.js.LICENSE.txt": "/API-project-group-2/static/js/2.28e266c4.chunk.js.LICENSE.txt",
+    "static/media/clam-psi.css": "/API-project-group-2/static/media/Moving_Cloud.ed875512.gif"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1ebe48ba.js",
+    "static/js/2.28e266c4.chunk.js",
+    "static/css/main.d86c32fe.chunk.css",
+    "static/js/main.72305978.chunk.js"
+  ]
+}
